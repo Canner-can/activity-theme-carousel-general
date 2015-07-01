@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{{activity-title}}</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="css/main.css" rel="stylesheet">
+<link href="carousel.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    	<!-- Indicators -->
+     	<ol class="carousel-indicators">
+        	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        	<li data-target="#myCarousel" data-slide-to="1"></li>
+        	<li data-target="#myCarousel" data-slide-to="2"></li>
+      	</ol>
+      	<div class="carousel-inner" role="listbox">
+        	<div class="item active">
+          		<img class="first-slide" src={{slide01.img}} alt="First slide">
+          		<div class="container">
+            		<div class="carousel-caption">
+              			<h1>{{slide01.headline}}</h1>
+              			<p>{{slide01.note}}</p>
+            		</div>
+          		</div>
+        	</div>
+        	<div class="item">
+          		<img class="second-slide" src={{slide02.img}} alt="Second slide">
+          		<div class="container">
+            		<div class="carousel-caption">
+              			<h1>{{slide02.headline}}</h1>
+              			<p>{{slide02.note}}</p>
+            		</div>
+          		</div>
+        	</div>
+        	<div class="item">
+          		<img class="third-slide" src={{slide03.img}} alt="Third slide">
+          		<div class="container">
+            		<div class="carousel-caption">
+              			<h1>{{slide03.headline}}</h1>
+              			<p>{{slide03.note}}</p>
+            		</div>
+          		</div>
+        	</div>
+      	</div>
+      	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        	<span class="sr-only">Previous</span>
+      	</a>
+      	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        	<span class="sr-only">Next</span>
+      	</a>
+    </div><!-- /.carousel -->
+
+    <div class="container marketing">
+    	{{#each activity-description-text}}
+    	<div class="description-text">
+    		<h2>{{this.subject}}</h2>
+    		<p class="lead">{{this.detail}}<p>
+    		<hr>
+    	</div>
+    	{{/each}}
+
+    	{{#each activity-description-point}}
+    	<div class="description-point">
+    		<h2>{{this.subject}}</h2>
+    		<ul class="lead">
+    			{{#each this.point}}
+    			<li>{{this.point-detail}}</li>
+    			{{/each}}
+    		</ul>
+    		<hr>
+    	</div>
+    	{{/each}}
+
+    	{{#each activity-description-point-link}}
+    	<div class="description-point-link">
+    		<h2>{{this.subject}}</h2>
+    		<ul class="lead">
+    			{{#each this.point}}
+    			<li><a href={{this.point-link}}>{{this.point-detail}}</a></li>
+    			{{/each}}
+    		</ul>
+    		<hr>
+    	</div>
+    	{{/each}}
+
+    	<div class="map">
+    		<h2>地圖</h2>
+        	<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q={{map.longtitude}},{{map.latitude}}&z=16&output=embed&t=></iframe>
+    	</div>
+    </div>
+</body>
+</html>
