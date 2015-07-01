@@ -1,0 +1,74 @@
+{
+    "layout": "./index.hbs",
+    "data": {
+        "activity-title": "Conference",
+    	"slide01": {
+    		"img": "http://i.imgur.com/T72quOM.jpg",
+    		"headline": "headline1",
+    		"note": "note1"
+    	},
+    	"slide02": {
+    		"img": "http://i.imgur.com/PuYk054.jpg",
+    		"headline": "headline2",
+    		"note": "note2"
+    	},
+    	"slide03": {
+    		"img": "http://i.imgur.com/idd80Mr.jpg",
+    		"headline": "headline3",
+    		"note": "note3"
+    	},
+    	"activity-description-text": [
+            {
+                "subject": "會議目的",
+                "detail": "這次活動是為了讓同一個團體內的人可以多多交流，請有興趣的人可以多參加。................"
+            },
+            {
+                "subject": "會議內容",
+                "detail": "這次會議主要分三軌進行................................................................"
+            }
+        ],
+        "activity-description-point": [
+            {
+                "subject": "注意事項",
+                "point": [
+                    {"point-detail": "報到時間：09:00"},
+                    {"point-detail": "活動時間：10:00"}
+                ]
+            },
+            {
+                "subject": "主辦單位",
+                "point": [
+                    {"point-detail": "NCKU"}
+                ]
+            },
+            {
+                "subject": "聯絡方式",
+                "point": [
+                    {"point-detail": "電話：0x-xxxxxxx"},
+                    {"point-detail": "傳真：0x-xxxxxxx"},
+                    {"point-detail": "email：tmp@tmp.com"},
+                    {"point-detail": "郵寄地址：701台南市東區大學路x號"}
+                ]
+            }
+        ],
+        "activity-description-point-link": [
+            {
+                "subject": "售票",
+                "point": [
+                    {
+                        "point-detail": "KKTIX",
+                        "point-link": "http://kktix.com"
+                    },
+                    {
+                        "point-detail": "ibon",
+                        "point-link": "http://www.ibon.com.tw"
+                    }
+                ]
+            }
+        ],
+    	"map": {
+            "longtitude": "22.996487",
+            "latitude": "120.216618"
+        }
+    }   
+}
