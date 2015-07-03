@@ -1,59 +1,57 @@
 {
     "layout": "./index.hbs",
     "data": {
-        "activity-title": "Conference",
+        "activity-title": "Design Conference",
     	"slide01": {
-    		"img": "http://i.imgur.com/T72quOM.jpg",
-    		"headline": "headline1",
-    		"note": "note1"
+    		"img": "http://i.imgur.com/PuYk054.jpg",
+    		"headline": "Design Conference",
+    		"note": "Design Tools"
     	},
     	"slide02": {
-    		"img": "http://i.imgur.com/PuYk054.jpg",
-    		"headline": "headline2",
-    		"note": "note2"
+    		"img": "http://i.imgur.com/T72quOM.jpg",
+    		"headline": "iMac",
+    		"note": "Clear"
     	},
     	"slide03": {
     		"img": "http://i.imgur.com/idd80Mr.jpg",
-    		"headline": "headline3",
-    		"note": "note3"
+    		"headline": "keyboard",
+    		"note": "Pure"
     	},
     	"activity-description-text": [
             {
-                "subject": "會議目的",
-                "detail": "這次活動是為了讓同一個團體內的人可以多多交流，請有興趣的人可以多參加。................"
+                "subject": "Conference Purpose",
+                "detail": "For designer, there are many different degin tools. We hope everyone can share experience with others in this conference."
             },
             {
-                "subject": "會議內容",
-                "detail": "這次會議主要分三軌進行................................................................"
+                "subject": "Conference Content",
+                "detail": "Adobe Illustrator, Photoshop CC"
             }
         ],
         "activity-description-point": [
             {
-                "subject": "注意事項",
+                "subject": "Notes",
                 "point": [
-                    {"point-detail": "報到時間：09:00"},
-                    {"point-detail": "活動時間：10:00"}
+                    {"point-detail": "Registration Time：09:00"},
+                    {"point-detail": "Activity Time：10:00"}
                 ]
             },
             {
-                "subject": "主辦單位",
+                "subject": "Organizers",
                 "point": [
                     {"point-detail": "NCKU"}
                 ]
             },
             {
-                "subject": "聯絡方式",
+                "subject": "Contact",
                 "point": [
-                    {"point-detail": "電話：0x-xxxxxxx"},
-                    {"point-detail": "傳真：0x-xxxxxxx"},
-                    {"point-detail": "email：tmp@tmp.com"},
-                    {"point-detail": "郵寄地址：701台南市東區大學路x號"}
+                    {"point-detail": "Phone：0912345678"},
+                    {"point-detail": "email：tmp@tmp.com"}
                 ]
             }
         ],
         "activity-description-point-link": [
             {
-                "subject": "售票",
+                "subject": "Ticket",
                 "point": [
                     {
                         "point-detail": "KKTIX",
@@ -70,5 +68,5 @@
             "longtitude": "22.996487",
             "latitude": "120.216618"
         }
-    }   
+    }
 }
